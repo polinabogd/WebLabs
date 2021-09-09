@@ -1,0 +1,68 @@
+header {
+    justify-content: space-between;
+    font-family: "Inter";
+    display:flex;
+    align-items: center;
+    padding-top: 43px;
+}
+
+.header_nav_and_button {
+    display:flex;
+    align-items: center;
+}
+
+.header_nav ul {
+    display: flex;
+}
+
+.header_nav_li_home{
+    margin-right: 35px;
+    font-weight: 500;
+    color: #202336;
+}
+
+.header_nav_li {
+    margin-right: 34px;  
+}
+
+.header_buttons button{
+    margin-right: 18px;
+    width: 132px;
+    height: 44px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.header_button_login {
+    background-color: white;
+    box-sizing: border-box;
+    color: #FB8F1D;
+    border: 1px solid #FB8F1D;
+}
+
+.header_button_register{
+    background: #FB8F1D;
+    color: #FFFFFF;
+}
+
+.header_circle div{
+    border-radius: 50%;
+}
+
+.header_circle_big{
+    width: 41px;
+    height: 41px;
+    background: #1ABE84;
+    padding-top: 0;
+    display:flex;
+    align-items: center;
+}
+
+.header_circle_small {
+    border: 3px solid #FFFFFF;
+    width: 15px;
+    height: 15px;
+    background: #FB8F1D;
+    margin-left: 10px;
+}

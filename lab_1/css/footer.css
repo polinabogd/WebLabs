@@ -1,0 +1,28 @@
+.header_circle{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.footer_line{
+    width: 1219px;
+    height: 0.6px;
+    background: #C4C4C4;
+    margin-top: 26px;
+    margin-bottom: 30.4px;
+}
+
+.footer_head_title{
+    width: 391px;
+    height: 28px;
+    font-family: Mulish;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 28px;
+    color: #848484;
+}
+
+.footer img{
+    display: flex;
+    align-items: center;
+}

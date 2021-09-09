@@ -1,0 +1,40 @@
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.intro_image{
+    margin-right: 102px;
+}
+
+.intro_title{
+    width: 481px;
+    height: 100px;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 36px;
+    color: #000000;
+    line-height: 50px;
+}
+
+.intro_text{
+    width: 450px;
+    height: 120px;
+    font-family: "Mulish";
+    font-weight: 300;
+    font-size: 17px;
+    color: #7D7987;
+    line-height: 30px;
+}
+
+.intro_button{ 
+    width: 164px;
+    height: 48px;
+    background: #FB8F1D;
+    border-radius: 8px;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+}
