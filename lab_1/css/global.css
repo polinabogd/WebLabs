@@ -1,0 +1,65 @@
+body {
+    font-family: "Playfair Display", "Inter", "Mulish";
+}
+
+.hero {
+    margin: 0 auto;
+    width: 1219px;
+    padding-bottom: 175px;
+}
+
+.intro{
+    margin: 0 auto;
+    width: 1600px;
+    height: 774px;
+    background: #F8F8F8;
+}
+
+.views{
+    width: 1120px;
+    height: 532px;
+    margin: 0 auto;
+    padding-top: 133px;
+    padding-bottom: 134px;
+}
+
+.footer{
+    margin: 0 auto;
+    width: 1600px;
+    height: 195px;
+    background: #F8F8F8;
+}
+
+a {
+    text-decoration: none;
+    color: #B8BECD;
+}
+
+li {
+    display: block;
+}
+
+button {
+    border: 0;
+}
+
+.header_circle div{
+    border-radius: 50%;
+}
+
+.header_circle_big{
+    width: 41px;
+    height: 41px;
+    background: #1ABE84;
+    padding-top: 0;
+    display:flex;
+    align-items: center;
+}
+
+.header_circle_small {
+    border: 3px solid #FFFFFF;
+    width: 15px;
+    height: 15px;
+    background: #FB8F1D;
+    margin-left: 10px;
+}
