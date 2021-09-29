@@ -1,0 +1,114 @@
+.views_images {
+    display: flex;
+    margin-top: 51px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 135px;
+}
+
+.views_head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.views_images_rectangle{
+    width: 120px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 0px 6px 0px 0px;
+}
+
+.views_images_sign{
+    font-family: "Inter";
+}
+
+.views_images h1{
+    font-weight: 600;
+    font-size: 17px;
+    color: #042521;
+}
+
+.views_images h2{
+    font-size: 15px;
+    color: #7D7987;
+}
+
+.view_img_1{
+    display: flex;
+    align-items:flex-end;
+    justify-content:left;
+    height: 332px;
+    width: 261px;
+    border-radius: 8px;
+}
+
+.views_head_title{
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: var(--font-size-sel);;
+    color: #000000;
+}
+
+.view_scroll_arrow{
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 4px;
+    height: 11px;
+}
+
+.view_head_scroll{
+    background: none;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 17px;
+    color: #FB8F1D;
+}
+
+.footer_end{
+    padding-top: 30.4px;
+    display: flex;
+    justify-content:center;
+}
+
+@media screen and (min-width:1162px) {
+    .views_head{
+        margin: 0 auto;
+        width: 1156px;
+    }
+}
+
+@media screen and (max-width:601px) {
+    .views_head{
+        justify-content: center;
+        display: block;
+    }
+    .vw_img{
+        display: block;
+    }
+    .views_images{
+        display: block;
+        width: 100%;
+    }
+    .view_img_1{
+        margin: 25px auto;
+    }
+}
+
+@media screen and (max-width:1000px) and (min-width:601px) {
+    .vw_img{
+        display: block;
+    }
+    .view_img_1{
+        margin: 25px 25px 0 0;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .vw_img{
+        display: contents;
+    }
+    .view_img_1{
+        margin-right: 25px;
+    }
+}

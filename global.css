@@ -1,0 +1,87 @@
+:root {
+    --font-size-title: 1rem;
+    --font-size-sub: 0.34375rem;
+    --font-size-sel: 0.5625rem;
+    --font-size-artc: 0.265625rem;
+    --font-size-head: 0.25rem;
+    --size-button-w: 2.0625rem;
+    --size-button-h: 0.6875rem;
+    --font-size-button: 0.234375rem;
+}
+
+body {
+    font-family: "Playfair Display", "Inter", "Mulish";
+    display: block;
+    justify-content: center;
+}
+
+section{
+    padding: 0 10px;
+}
+header {
+    position: fixed;
+    background-color: white;
+    left: 0;
+    right: 0;
+    top: 0;
+    justify-content: space-between;
+    font-family: "Inter";
+    display:flex;
+    align-items: center;
+}
+.hero {
+    padding-bottom: 175px;
+}
+
+.intro{
+    height: 774px;
+    background: #F8F8F8;
+}
+
+.views{    
+    height: 100%;
+    padding: 2.07rem 0 2.09rem 0;
+}
+
+.footer{
+    height: 195px;
+    background: #F8F8F8;
+}
+
+a {
+    text-decoration: none;
+    color: #B8BECD;
+}
+
+li {
+    display: block;
+}
+
+button {
+    border: 0;
+}
+
+@media screen and (min-width:1600px){
+    section{
+        width: 1600px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    :root{
+        font-size: 64px;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 400px){
+    :root{
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    :root{
+        font-size: 36px;
+    }
+}
