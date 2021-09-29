@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="hero">
+        <header class="header">
+            <div class="header_circle">
+                <div class="header_circle_big">
+                    <div class="header_circle_small"></div>
+                </div>
+            </div>
+            <div class="header_nav_and_button">
+                <div id="nav-links" class="header_ham_menu">
+                    <nav class="header_nav">
+                        <ul>
+                            <li><a class="header_nav_li_home" href="">Home</a></li>
+                            <li><a class="header_nav_li" href="">Destinations</a></li>
+                            <li><a class="header_nav_li" href="">About</a></li>
+                            <li><a class="header_nav_li" href="">Partner</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header_buttons_for_menu">
+                        <button class="header_button_login">Login</button>
+                    </div>
+                </div>
+                <div class="header_buttons">
+                    <button class="header_button_login">Login</button>
+                    <button class="header_button_register">Register</button>
+                    <div class="header_menu" onclick="toggleMenu()">
+                        <img src="images/menu-icon.svg" alt="Menu icon">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container_hero">
+            <div class="hero_main_content">
+                <h1 class="hero_title">Explore and
+                    Travel</h1>
+                <h2 class="hero_subtitle">Holiday finder</h2>
+                <div class="hero_line"></div>
+                <div class="hero_location_activity">
+                    <select name="" class="hero_location">
+                        <option value=" ">Location</option>
+                    </select>
+                    <select name="" class="hero_activity">
+                        <option value=" ">Activity</option>
+                    </select>
+                </div>
+                <div class="hero_garde_date">
+                    <select name="" class="hero_grade">
+                        <option value=" ">Grade</option>
+                    </select>
+                    <select name="" class="hero_date">
+                        <option value=" ">Date</option>
+                    </select>
+                </div>
+                <button class="hero_explore">Explore</button>
+            </div>
+            <div class="hero_image">
+                <img src="images/hero_image.svg" alt="Hero image" />
+            </div>
+        </div>
+    </section>
+    <section class="intro">
+        <div class="intro_image">
+            <img class="intro_image_img" src="images/intro_image.svg" alt="More information image" />
+        </div>
+        <div class="intro_info">
+            <h1 class="intro_title">A new way to explore the world </h1>
+            <p class="intro_text">For decades travellers have reached for Lonely Planet books when looking to plan and
+                execute their perfect
+                trip, but now, they can also let Lonely Planet Experiences lead the way</p>
+            <button class="intro_button">Learn more</button>
+        </div>
+    </section>
+    <section class="views">
+        <div class="views_head">
+            <h1 class="views_head_title">Featured destinations</h1>
+            <div class="view_button_scroll">
+                <button class="view_head_scroll">View all</button>
+                <button class="view_scroll_arrow" style="background-image: url(images/view_scroll_arrow.svg);"></button>
+            </div>
+        </div>
+        <div class="views_images">
+            <div class="vw_img">
+                <div class="view_img_1" style="background-image: url('images/views_image_1.svg')">
+                    <div class="views_images_rectangle">
+                        <h1 class="views_images_sign">Raja Ampat</h1>
+                        <h2 class="views_images_sign">Indonesia</h2>
+                    </div>
+                </div>
+                <div class="view_img_1" style="background-image: url('images/views_image_2.svg')">
+                    <div class="views_images_rectangle">
+                        <h1 class="views_images_sign">Fanjingshan</h1>
+                        <h2 class="views_images_sign">China</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="vw_img">
+                <div class="view_img_1" style="background-image: url('images/views_image_3.svg')">
+                    <div class="views_images_rectangle">
+                        <h1 class="views_images_sign">Vevey</h1>
+                        <h2 class="views_images_sign">Switzerland</h2>
+                    </div>
+                </div>
+                <div class="view_img_1" style="background-image: url('images/views_image_4.svg')">
+                    <div class="views_images_rectangle">
+                        <h1 class="views_images_sign">Skadar</h1>
+                        <h2 class="views_images_sign">Montenegro</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <footer>
+            <div class="header_circle">
+                <div class="header_circle_big">
+                    <div class="header_circle_small"></div>
+                </div>
+                <h2 class="footer_head_title">©2020 Thousand Sunny. All rights reserved</h2>
+            </div>
+            <div class="footer_line"></div>
+            <div class="footer_end">
+                <img class="footer_sn_img" src="images/footer_in.svg" alt="View image" />
+            </div>
+        </footer>
+    </section>
+    <script>
+    const OPEN_CLASSNAME = "open";
+    const navLinks = document.getElementById("nav-links");
+        function toggleMenu() {
+            if (navLinks.classList.contains(OPEN_CLASSNAME)) {
+                navLinks.classList.remove(OPEN_CLASSNAME);
+            } else {
+                navLinks.classList.add(OPEN_CLASSNAME);
+            }
+        }</script>
+</body>
+
+</html>
