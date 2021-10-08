@@ -4,6 +4,7 @@ const songInput = document.getElementById("song_input");
 const durationInput = document.getElementById("duration_input");
 const viewsInput = document.getElementById("views_input");
 
+
 const itemTemplate = ({ id, artist, song, duration, views }) => `
 <li id="${id}" class="card" draggable="true">
     <div>
@@ -61,14 +62,6 @@ let clips = [
     { id: 3, artist: 'Selena Gomez', song: 'Other shit', duration: 1200, views: 3000 },
 ]
 
-submitCreationBtn.addEventListener("click", (event) =>{
-    event.preventDefault();
-    const { artist, song, duration, views } = getInputValue();
-
-    clearInputs();
-    addClipToPage({ artist, song, duration, views })
-})
-
 const addItem = ({ artist, song, duration, views }) => {
     const generatedId = uuid.v1();
 
@@ -77,6 +70,34 @@ const addItem = ({ artist, song, duration, views }) => {
     clips.push(newItem);
     addClipToPage(newItem);
 }
+
+const editButton = document.getElementById("edit_item--button");
+
+editButton.addEventListener("click", (event) =>{
+    event.preventDefault();
+    const foundClips = clips.filter(
+        (clip) => clip.song.search(searchInput.value) !== -1
+    );
+    editItem(foundClips);
+    addClipToPage(foundClips);
+})
+
+const editItem = (foundClip) => {
+    foundClip.artist = artistInput.value;
+    foundClip.song = songInput.value;
+    foundClip.duration = durationInput.value;
+    foundClip.views = viewsInput.value;
+    clips.push(foundClip);
+    addClipToPage(foundClip);
+}
+
+submitCreationBtn.addEventListener("click", (event) =>{
+    event.preventDefault();
+    const { artist, song, duration, views } = getInputValue();
+
+    clearInputs();
+    addClipToPage({ artist, song, duration, views })
+})
 
 sortButton.addEventListener("click", (event) => {
     event.preventDefault();
