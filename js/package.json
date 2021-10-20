@@ -1,0 +1,12 @@
+{
+  "name": "first-live-coding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "basic_funcs.js",
+  "type": "module",
+  "scripts": {
+      "start": "npx browser-sync start --server --files ."
+  },
+  "author": "",
+  "license": "ISC"
+}
