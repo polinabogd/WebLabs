@@ -1,0 +1,39 @@
+body{
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: var(--font-size-head);
+}
+section{
+    display: flex;
+}
+ul{
+    display: block;
+}
+header{
+    align-items: center;
+    display: flex;
+}
+button{
+    border: 1px solid #FB8F1D;
+    padding: 10px 10px;
+    background: #FB8F1D;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+.delete-section__icon {
+    padding: 25px 25px;
+    background-color:black;
+    width: 40px;
+}
+
+button:active {
+    background-color: white;
+    box-sizing: border-box;
+    color: #FB8F1D;
+    content: '';
+    z-index: -1;
+    transition: all 0.4s;
+}
+p{
+    color: #FB8F1D
+}

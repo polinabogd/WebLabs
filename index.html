@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="header_label">Music videos</h1>
+        <div class="button_items">
+            <p id="total_duration">0</p>
+            <button id="count_total">Count total duration</button>
+            <input type="text" id="search_items--input">
+            <button id="search_items--search">Search</button>
+            <button id="search_items--clear">Clear</button>
+            <button id="sort_items--button">Sort by views</button>
+        </div>
+    </header>
+    <section>
+        <form id="add_form" class="create__form">
+            <h3 class="create__form--titel">Create card</h3>
+            <div class="create_form--artist">
+                <label for="artist_input" class="form-label">Artist</label>
+                <input type="text" class="form-control" id="artist_input" />
+            </div>
+            <div class="create_form--song">
+                <label for="song_input" class="form-label">Song</label>
+                <input type="text" class="form-control" id="song_input" />
+            </div>
+            <div class="create_form--duration">
+                <label for="duration_input" class="form-label">Duration</label>
+                <input type="number" class="form-control" id="duration_input" />
+            </div>
+            <div class="create_form--views">
+                <label for="views_input" class="form-label">Views</label>
+                <input type="number" class="form-control" id="views_input" />
+            </div>
+            <button id="submit_button" type="submit" class="btn btn-primary">
+                Submit
+            </button>
+        </form>
+
+        <ul id="items_container"></ul>
+
+    </section>
+    <script type="module" src="./js/basic_funcs.js"></script>
+</body>
+
+</html>
