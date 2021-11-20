@@ -41,3 +41,17 @@ export const Links = styled.ul`
     list-style: none;
     padding: 0;
 `
+
+    export const NavWrapper = styled.div`
+    width: 200px;
+    flex: 1;
+    `
+
+    export const Search = styled.input`
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    color: #c4c4c4;
+    padding: 8px 8px;
+    margin: 0;
+`
