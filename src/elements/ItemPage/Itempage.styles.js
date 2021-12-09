@@ -36,14 +36,39 @@ font-size: 32px;
 align-self: center;
 `
 export const Button = styled.button`
-margin-top: 30px;
-padding: 18px 32px;
-background-color: #ff6d7d;
-border: none;
-border-radius: 10px;
-width: 250px;
-align-self: center;
-&:hover {
-    box-shadow: 0 0 8px #777676;
+    background: none;
+    margin-right: 20px;
+    color: black;
+    width: 132px;
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 8px; 
+    text-align : center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.1s;
+    outline: none;
+    &:hover {
+        transform: translateY(-0.25em);
+
+}
+`
+export const AddButton = styled.button`
+    background: none;
+    margin-top: 10px;
+    margin-right: 20px;
+    color: black;
+    width: 132px;
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 8px; 
+    text-align : center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.1s;
+    outline: none;
+    &:hover {
+        transform: translateY(-0.25em);
+
 }
 `

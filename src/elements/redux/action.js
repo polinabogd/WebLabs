@@ -1,13 +1,13 @@
-export const addItem = ({artist, duration}) => {
+export const addItem = ({song, duration}) => {
     return {
         type: "ADD",
-        payload: {artist, duration}
+        payload: {song, duration}
     }
 }
 
-export const deleteItem = ({artist}) => {
+export const deleteItem = ({song}) => {
     return {
         type: "DELETE",
-        payload: {artist}
+        payload: {song}
     }
 }

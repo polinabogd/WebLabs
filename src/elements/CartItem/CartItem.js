@@ -24,8 +24,8 @@ export function CartItem(item) {
     function increaseByOne() {
         updateAmount(clipsAmount + 1);
     }
-    function removeItem(artist) {
-        dispatch(deleteItem({artist}))
+    function removeItem(song) {
+        dispatch(deleteItem({song}))
     }
     function returnImage() {
         return clip;
@@ -33,8 +33,8 @@ export function CartItem(item) {
     return (
         <>
             <Wrapper>
-                <Image src={returnImage(item.artist)}/>
-                <Text>{item.artist}</Text>
+                <Image src={returnImage(item.song)}/>
+                <Text>{item.song}</Text>
                 <CounterWrapper>
                     <ButtonWrapper>
                         <Button onClick={decreaseByOne}><div style={{fontWeight: 600, fontSize: 16}}>-</div></Button>
@@ -42,8 +42,8 @@ export function CartItem(item) {
                         <Button onClick={increaseByOne}><div style={{fontWeight: 600, fontSize: 16}}>+</div></Button>
                     </ButtonWrapper>
                 </CounterWrapper>
-                <Duration>{item.duration * clipsAmount}</Duration>
-                <CloseSquareOutlined style={{alignSelf: "flex-start", margin: "10px"}} onClick={() => removeItem(item.artist)}/>
+                <Duration>{item.duration * clipsAmount} sec</Duration>
+                <CloseSquareOutlined style={{alignSelf: "flex-start", margin: "10px"}} onClick={() => removeItem(item.song)}/>
             </Wrapper>
         </>
     );
