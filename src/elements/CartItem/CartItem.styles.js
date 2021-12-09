@@ -17,6 +17,7 @@ font-weight: 500;
 margin: 0 0 0 32px;
 font-size: 32px;
 flex: 1;
+color: black;
 `
 
 export const Duration = styled.h3`
@@ -28,7 +29,7 @@ font-size: 32px;
 
 export const Image = styled.img`
 width: 200px;
-height: 200px;
+height: 120px;
 border-radius: 10px;
 `
 

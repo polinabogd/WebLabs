@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Button } from "../ItemPage/Itempage.styles";
 
 export const Wrapper = styled.div`
 display: flex;
@@ -28,13 +29,7 @@ justify-content: space-between;
 padding: 0 220px;
 `
 
-export const Button = styled.button`
-font-size: 26px;
-padding: 18px 32px;
-background-color: #dfe5ff;
-border: solid #0044b7 1px;
-border-radius: 5px;
-&:hover {
-    box-shadow: 0 0 8px #777676;
-}
+export const ButtonForm = styled(Button)`
+    width: 200px;
+    margin: auto;
 `

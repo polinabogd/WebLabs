@@ -6,7 +6,7 @@ export default function todoReducer(state = [], action) {
             const item = action.payload;
             return [...state, item]
         case "DELETE":
-            const id = state.findIndex(item => item.artist === action.payload.artist)
+            const id = state.findIndex(item => item.song === action.payload.song)
             console.log(id)
             return [...state.slice(0, id), ...state.slice(id + 1)];
         default:
